@@ -21,7 +21,8 @@ function createTemplate(data){
     var heading=data.heading;
     var content=data.content;
     
-var htmlTemplate=`<html>
+var htmlTemplate=`
+<html>
     <head>
         <title>${title}</title>
         <meta name="viewport" content="device-width-device,initial-scale=1"/>
@@ -54,7 +55,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-    res.sendFile(creteTemplate(articleOne));
+    res.sendFile(createTemplate(articleOne));
 });
 
 /*app.get('/article-two', function (req, res) {
