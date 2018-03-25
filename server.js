@@ -57,13 +57,13 @@ app.get('/article-one', function (req, res) {
     res.sendFile(creteTemplate(articleOne));
 });
 
-app.get('/article-two', function (req, res) {
+/*app.get('/article-two', function (req, res) {
     res.sendFile(creteTemplate(articleTwo));
 });
 
 app.get('/article-three', function (req, res) {
     res.sendFile(creteTemplate(articleThree));
-});
+});*/
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
