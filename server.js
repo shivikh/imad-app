@@ -18,7 +18,7 @@ var articles={
 'article-two':{
     title :'Article-two|shivani',
     heading:'Article two',
-    date:'25 march 2018',
+    date:'26 march 2018',
     content:`
      <p>this is my second web app.this is my second web app.this is my second web app.this is my second web app.this is my second web app.</p>
         `
@@ -27,7 +27,7 @@ var articles={
 'article-three':{
     title :'Article-three|shivani',
     heading:'Article three',
-    date:'25 march 2018',
+    date:'27 march 2018',
     content:`
      <p>this is my three web app.this is my three web app.this is my three web app.this is my three web app.this is my three web app.this is my three web app.</p>
         `
