@@ -15,7 +15,7 @@ var articles={
         <p>this is my first web app.this is my first web app.this is my first web app.this is my first web app.this is my first web app.this is my first web app.</p>`
             
 },
- 'articl-two':{
+ 'article-two':{
     title :'Article-two|shivani',
     heading:'Article two',
     date:'25 march 2018',
