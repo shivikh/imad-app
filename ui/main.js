@@ -6,6 +6,7 @@ element.innerHTML='new value';
 
 //move the image
 var img=document.getElementById('nodi');
+var marginLeft=0;
 function moveRight()
 {
     marginLeft=marginLeft+1;
