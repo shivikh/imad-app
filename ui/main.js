@@ -19,8 +19,9 @@ img.onclick=function(){
 
 //counter end point
 
+
+var button=document.getElementById('counter');
 var counter=0;
-var botton=document.getElementById('counter');
 button.onclick=function()
 {
     counter=counter+1;
