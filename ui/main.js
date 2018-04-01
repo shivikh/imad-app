@@ -47,6 +47,6 @@ button.onclick = function()
             }
         }
     };
-    request.open('GET','http://skhandelwal58821.imad.hasura.io/counter',true);
+    request.open('GET','http://skhandelwal58821.imad.hasura-app.io/counter',true);
     request.send(null);
 };
