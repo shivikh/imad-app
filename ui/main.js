@@ -37,7 +37,7 @@ button.onclick=function()
     var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
-        if(request.readystate===XMLHttpRequest.DONE)
+        if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
             {
@@ -47,6 +47,6 @@ button.onclick=function()
             }
         }
     };
-    request.open('GET','http://coco98.imad.hasura.io/counter',true);
+    request.open('GET','http://skhandelwal58821.imad.hasura.io/counter',true);
     request.send(null);
 };
