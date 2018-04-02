@@ -98,7 +98,7 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 var names =[];
-app.get('/submit_name/:name',function(req,res)
+app.get('/submit_name',function(req,res)
 {
     var name = req.params.name;
     names.push(name);
