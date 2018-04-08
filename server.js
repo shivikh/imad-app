@@ -1,17 +1,17 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+//var Pool = require('pg').Pool;
 var crypto = require('crypto');
 
-var config = {
+/*var config = {
     user:'skhandelwal58821',
     database:'skhandelwal58821',
     host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
 };
-
+*/
 var app = express();
 app.use(morgan('combined'));
 var articles={
@@ -96,7 +96,7 @@ app.get('/hash/:input',function(req,res)
    res.send(hashedStrinng);
 });
 
-var pool = new Pool(config);
+/*var pool = new Pool(config);
 app.get('/text-db',function(req,res)
 {
    //make a select request
@@ -113,7 +113,7 @@ app.get('/text-db',function(req,res)
        }
    });
 });
-
+*/
 var counter=0;
 app.get('/counter',function(req,res)
 {
