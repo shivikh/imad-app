@@ -93,7 +93,7 @@ function hash(input, salt)
 app.get('/hash/:input',function(req,res)
 {
    var hashedString = hash(req.params.input, 'this-is-some-string');
-   res.send(hashedStrinng);
+   res.send(hashedString);
 });
 
 /*var pool = new Pool(config);
