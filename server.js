@@ -1,18 +1,18 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-//var Pool = require('pg').Pool;
+var Pool = require('pg').Pool;
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
 
-/*var config = {
+var config = {
     user:'skhandelwal58821',
     database:'skhandelwal58821',
     host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
 };
-*/
+
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
