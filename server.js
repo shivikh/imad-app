@@ -47,7 +47,7 @@ var articles={
             
 }
 };
-function createTemplate(data){
+/*function createTemplate(data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
@@ -82,7 +82,7 @@ var htmlTemplate=`
 `;
 return htmlTemplate;
 }
-
+*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -168,7 +168,7 @@ app.get('/text-db',function(req,res)
        }
        else
        {
-           res.send(JSON.Stringify(result));
+           res.send(JSON.stringify(result));
        }
    });
 });
