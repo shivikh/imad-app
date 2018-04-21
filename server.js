@@ -17,7 +17,7 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
-var articles={
+//var articles={
 'article-one':{
     title :'Article-one|shivani',
     heading:'Article one',
