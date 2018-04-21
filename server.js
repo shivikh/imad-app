@@ -99,7 +99,7 @@ app.get('/hash/:input',function(req,res)
    res.send(hashedString);
 });
 
-
+/*
 app.post('/create-user',function(req,res)
 {
     //("username":"shivani","password":"password")
@@ -120,7 +120,7 @@ app.post('/create-user',function(req,res)
    });
 });
 
-
+*/
 app.post("/login",function(req,res)
 {
     var username = req.body.username;
@@ -155,7 +155,7 @@ app.post("/login",function(req,res)
    });
 })
 
-/*var pool = new Pool(config);
+var pool = new Pool(config);
 app.get('/text-db',function(req,res)
 {
    //make a select request
@@ -168,11 +168,11 @@ app.get('/text-db',function(req,res)
        }
        else
        {
-           res.send(JSON,stringify(result));
+           res.send(JSON.stringify(result));
        }
    });
 });
-*/
+
 var counter=0;
 app.get('/counter',function(req,res)
 {
