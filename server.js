@@ -188,13 +188,13 @@ app.get('/submit_name',function(req,res)
 });
 
 
-app.get('/:articleName', function (req, res) {
+app.get('/articles/:articleName', function (req, res) {
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article WHERE title='" + req.params.articleName + "'",function(req,res)
     {
        if(err)
        {
-           res.status(500).send(err.tostring);
+           res.status(500).send(err.toString());
        }
        else
        {
