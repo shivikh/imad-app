@@ -17,7 +17,7 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
-//var articles={
+var articles={
 'article-one':{
     title :'Article-one|shivani',
     heading:'Article one',
@@ -47,7 +47,7 @@ app.use(bodyParser.json());
             
 }
 };
-/*function createTemplate(data){
+function createTemplate(data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
@@ -82,12 +82,12 @@ var htmlTemplate=`
 `;
 return htmlTemplate;
 }
-*/
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-/*function hash(input, salt)
+function hash(input, salt)
 {
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
     return ["pbkdf2","10000",salt,hashed.toString('hex')];
@@ -98,8 +98,7 @@ app.get('/hash/:input',function(req,res)
    var hashedString = hash(req.params.input, 'this-is-some-string');
    res.send(hashedString);
 });
-*/
-/*
+
 app.post('/create-user',function(req,res)
 {
     //("username":"shivani","password":"password")
@@ -120,8 +119,8 @@ app.post('/create-user',function(req,res)
    });
 });
 
-*/
-/*app.post("/login",function(req,res)
+
+app.post("/login",function(req,res)
 {
     var username = req.body.username;
    var password = req.body.password;
@@ -153,7 +152,7 @@ app.post('/create-user',function(req,res)
       }
       }
    });
-})*/
+})
 
 var pool = new Pool(config);
 app.get('/text-db',function(req,res)
@@ -189,10 +188,10 @@ app.get('/submit_name',function(req,res)
 });
 
 
-/*app.get('/:articleName', function (req, res) {
+app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
     res.send(createTemplate(articles[articleName]));
-});*/
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
